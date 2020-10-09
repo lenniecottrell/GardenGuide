@@ -2,8 +2,7 @@
 
 ## Introduction
 
-GardenGuide is a basic garden-tracking web app using Django, Bootstrap, and SQLite as part of a large collection of apps. All of the code was written over a two-week sprint for the Live Project course at The Tech Academy. The app is intended for users to enter information about the plants they have in their garden, including the common and scientific names, how the plant was started (e.g. from seed), what kind of light and water needs it has, etc. It also includes a page with data scraped from another gardening blog. This was a full stack project - I was repsonsible for the front-end design as well as the database structure and data processing. While I worked on it, I was part of a team that utilzed Azure DevOps to collaborate and coordinate all of our apps into the larger project. 
-
+GardenGuide is a basic garden-tracking web app using Django, Bootstrap, and SQLite as part of a large collection of apps. All of the code was written over a two-week sprint for the Live Project course at The Tech Academy. The app is intended for users to enter information about the plants they have in their garden, including the common and scientific names, how the plant was started (e.g. from seed), what kind of light and water needs it has, etc. It also includes a page with data scraped from another gardening blog. This was a full stack project - I was repsonsible for the front-end design as well as the database structure and data processing. While I worked on it, I was part of a team that utilized Azure DevOps to collaborate and coordinate all of our apps into the larger project. 
  
 ## Front End
 
