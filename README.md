@@ -8,6 +8,13 @@ I wasn't able to upload the live version of the project, since it's an ongoing e
  
 ## Front End
 
+# Screenshots
+![Image1](https://github.com/lenniecottrell/GardenGuide/blob/master/images/GardenGuideHome.png)
+![Image2](https://github.com/lenniecottrell/GardenGuide/blob/master/images/addGardenDetails.png)
+![Image3](https://github.com/lenniecottrell/GardenGuide/blob/master/images/addPlant.png)
+![Image4](https://github.com/lenniecottrell/GardenGuide/blob/master/images/myGarden.png)
+
+
 ##### Item Index
 I used Django's built-in template inheritance structure to build the basic layout of my app. I wanted to display information from two related tables onto a single page. `single_plant_growing` is an instantiated object from the child table, and `plantdetails` is my foreign key. To access data in the parent table (to get the common name, for example), I needed to reference the foreign key using dot notation. 
 
