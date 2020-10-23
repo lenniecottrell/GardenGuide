@@ -6,7 +6,7 @@ GardenGuide is a basic garden-tracking web app using Django, Bootstrap, and SQLi
 
 I'm unfortunately not able to upload a live version of the project since it's part of an ongoing project hosted by The Tech Academy, but here's an overview of my work.
 
-*Jump to: [Front End](#front-end), [Back End](#back-end), [Takeaways](#other-takeaways), [Page Top](#gardenguide)*
+*Jump to: [Back End](#back-end), [Takeaways](#other-takeaways), [Page Top](#gardenguide)*
  
 ## Front End
 
@@ -65,7 +65,7 @@ I used Django's built-in template inheritance structure to build the basic layou
 #### Custom CSS
 While Bootstrap takes care of a lot, I needed to add some additional CSS to make sure my footer stuck to the bottom of the window and that text would be displayed neatly. 
 
-
+*Jump to: [Front End](#front-end), [Takeaways](#other-takeaways), [Page Top](#gardenguide)*
 ## Back End
 
 #### Relational databases
@@ -125,8 +125,8 @@ I used BeautifulSoup and RegEx to find additional data on an external site about
 
 ## Other Takeaways
 
-* I took away from this project a more robust understanding of Python, a familiairity with Django's architecture, plus experience with Azure DevOps and version control as part of a team.
+* This project gave me a more robust understanding of Python, a familiairity with Django's architecture, plus experience with Azure DevOps and version control as part of a team.
 * Choosing to work with related tables made my work more challenging, but also forced me to understand Django's underlying structure better.
 * Daily standups and weekly sprint reviews were a good introduction to DevOps culture.
 
-
+*Jump to: [Front End](#front-end), [Back End](#back-end), [Page Top](#gardenguide)*
