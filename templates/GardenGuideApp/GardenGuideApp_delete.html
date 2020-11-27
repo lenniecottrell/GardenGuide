@@ -1,0 +1,21 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+{% block title %} GardenGuide - Delete {% endblock %}
+
+{% block maincontent %}
+
+    {% comment %}
+        This is the delete confirmation page
+    {% endcomment %}
+
+    <div class="pt-3">
+        <form method="POST">
+            {% csrf_token %}
+            Are you want to delete this entire item ?
+            <input type="submit" value="Yes" />
+            <a href="{% url 'GG_plant_index' %}">Cancel</a>
+        </form>
+    </div>
+
+{% endblock %}

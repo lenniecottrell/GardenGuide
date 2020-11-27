@@ -1,0 +1,26 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+{% block title %} GardenGuide {% endblock %}
+
+{% block header %} Plant Index {% endblock %}
+
+{% block maincontent %}
+
+        {% comment %}
+            This page lists all items currently in the database by name, and displays a button to view
+            additional data about each item
+        {% endcomment %}
+
+    <div class="indexPage">
+        <ul class="pt-3">
+            {% for plant in plants %}
+                <b>{{ plant.common_name | title }}</b>
+                <div>
+                    <a href="{% url 'growing_details' plant.pk %}" class="btn btn-outline-success btn-sm" role="button">Click for details</a><br><br>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

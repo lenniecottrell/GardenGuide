@@ -1,0 +1,60 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+{% block title %} GardenGuide {% endblock %}
+
+{% block header %} Plant Details {% endblock %}
+
+{% block maincontent %}
+
+        {% comment %}
+            This page lists all of the data for for a single item.
+            At the bottom there are buttons to update or delete information
+        {% endcomment %}
+
+    <b>{{ single_plant_growing.plantdetails.common_name | title }}</b>
+
+    <table class="table">
+        <tr>
+            <td class="text-center text-white mt-5">Family:</td>
+            <td class="text-white text-center mt-5">{{ single_plant_growing.plantdetails.family }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Scientific Name:</td>
+            <td class="text-white text-center mt-5">{{ single_plant_growing.plantdetails.scientific_name }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Duration:</td>
+            <td class="text-white text-center mt-5">{{ single_plant_growing.plantdetails.duration }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Light:</td>
+            <td class="text-white text-center mt-5">{{ single_plant_growing.light_type }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Environment:</td>
+            <td class="text-center text-white mt-5">{{ single_plant_growing.environment_type }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Starting Condition:</td>
+            <td class="text-center text-white mt-5">{{ single_plant_growing.planting_type }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Water Needs:</td>
+            <td class="text-center text-white mt-5">{{ single_plant_growing.water_type }}</td>
+        </tr>
+    </table>
+
+{% endblock %}
+
+{% block secondcontent %}
+
+    <div class="d-inline-flex">
+        <a href="{% url 'update' single_plant_growing.pk %}" class="btn btn-success" role="button">Update Details</a>
+    </div>
+
+    <div class="d-inline-flex">
+        <a href="{% url 'delete' single_plant_growing.pk %}" class="btn btn-success" role="button">Delete Item</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+html {
+    background-image: url('/static/GardenGuideApp/images/garden1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background: transparent;
+    height: 100%;
+}
+
+.titles {
+    font-weight: bold;
+    text-align: center;
+    color: lightgray;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-shadow: 1.5px 1.5px gray;
+}
+
+.main_body .second_body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    background-color: darkgreen;
+}
+
+.indexPage {
+    text-align: center;
+}
+
+.centeredList {
+    display: inline-block;
+    text-align: left;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: left;
+  flex-shrink: 0;
+}

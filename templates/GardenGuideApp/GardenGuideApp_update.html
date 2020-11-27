@@ -1,0 +1,38 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+{% block title %} GardenGuide - Update {% endblock %}
+
+{% block header %} Update plant information {% endblock %}
+
+{% block maincontent %}
+
+    <div class="pt-3">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form1.as_p }}
+
+                {% comment %}
+                Listing each item from GrowingDetails individually, allowing me to hide the FK only
+                This was helpful: simpleisbetterthancomplex.com/article/2017/08/19/how-to-render-django-form-manually.html#accessing-the-form-fields-individually
+                {% endcomment %}
+
+            <p hidden>{{ form2.plantdetails }} </p>
+            <p>Light: {{ form2.light_type }} </p>
+            <p>Environment: {{ form2.environment_type }} </p>
+            <p>Planting Condition: {{ form2.planting_type }} </p>
+            <p>Water Needs: {{ form2.water_type }} </p>
+
+            <input type="Submit" value="Update"/>
+        </form>
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+<!-- ****THIS PAGE IS UNNECESSARY**** -->
+
+
+{% block title %} GardenGuide {% endblock %}
+
+{% block header %} Plant Details {% endblock %}
+
+{% block maincontent %}
+    <b>{{ single_plant.common_name }}</b>
+
+    <table class="table">
+        <tr>
+            <td class="text-center text-white mt-5">Plant name:</td>
+            <td class="text-white text-center mt-5">{{ single_plant.common_name }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Family Name:</td>
+            <td class="text-center text-white mt-5">{{ single_plant.family }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Scientific Name:</td>
+            <td class="text-center text-white mt-5">{{ single_plant.scientific_name }}</td>
+        </tr>
+        <tr>
+            <td class="text-center text-white mt-5">Duration:</td>
+            <td class="text-center text-white mt-5">{{ single_plant.duration }}</td>
+        </tr>
+    </table>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+{% block title %} GardenGuide {% endblock %}
+
+{% block header %} Plant Index {% endblock %}
+
+{% block maincontent %}
+
+        {% comment %}
+            This page lists all of the information in the GrowingDetails database, organized by item
+        {% endcomment %}
+
+    <div class="indexPage">
+        <ul class="centeredList">
+            {% for growing_stats in growing_index %}
+
+                    {% comment %}
+                        The first line below accesses the plantdetailk FK field to get the common_name from the PlantDetails model
+                    {% endcomment %}
+
+                Common Name:
+                    <b>{{ growing_stats.plantdetails.common_name | title }}</b><br>
+                Light:
+                    {{ growing_stats.light_type | title }}<br>
+                Environment:
+                    {{ growing_stats.environment_type | title }}<br>
+                Starting Condition:
+                    {{ growing_stats.planting_type | title }}<br>
+                Water Needs:
+                    {{ growing_stats.water_type | title }}<br><br>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
+{% block secondcontent %}{% endblock %}
+

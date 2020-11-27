@@ -1,0 +1,34 @@
+{% extends "GardenGuideApp/GardenGuideApp_base.html" %}
+{% load staticfiles %}
+
+{% block title %} GardenGuide - Search {% endblock %}
+
+{% block header %} Seasonal Fruits and Vegetables in Oregon {% endblock %}
+
+{% block subheader %} When each fruit or vegetable grows and is harvested {% endblock %}
+
+{% block maincontent %}
+
+        {% comment %}
+            List everything scraped from the web
+        {% endcomment %}
+
+    <div class="searchPage">
+        {% for item in words_i_need %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    </div><br>
+
+        {% comment %}
+            Some of the items were linked, so here are the additional items that didn't fit the
+            original scraped search terms'
+        {% endcomment %}
+
+    <u>Additional Fruits and Veggies: </u>
+    <div>
+        {% for item in result %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    </div>
+
+{% endblock %}
