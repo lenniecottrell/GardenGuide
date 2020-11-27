@@ -8,9 +8,9 @@ I'm unfortunately not able to upload a live version of the project since it's pa
 
 *Jump to: [Back End](#back-end), [Takeaways](#other-takeaways), [Page Top](#gardenguide)*
  
-## Front End
+# Front End
 
-# Screenshots
+## Screenshots
 ![Image1](https://github.com/lenniecottrell/GardenGuide/blob/master/images/GardenGuideHome.png)
 ![Image2](https://github.com/lenniecottrell/GardenGuide/blob/master/images/addGardenDetails.png)
 ![Image3](https://github.com/lenniecottrell/GardenGuide/blob/master/images/addPlant.png)
